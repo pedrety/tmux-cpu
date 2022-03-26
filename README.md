@@ -9,7 +9,7 @@ Configurable percentage and icon display.
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
 ```shell
-set -g @plugin 'tmux-plugins/tmux-cpu'
+set -g @plugin 'pedrety/tmux-cpu'
 ```
 
 Hit `prefix + I` to fetch the plugin and source it.
@@ -21,7 +21,7 @@ If format strings are added to `status-right`, they should now be visible.
 Clone the repo:
 
 ```shell
-$ git clone https://github.com/tmux-plugins/tmux-cpu ~/clone/path
+$ git clone https://github.com/pedrety/tmux-cpu ~/clone/path
 ```
 
 Add this line to the bottom of `.tmux.conf`:
@@ -158,7 +158,7 @@ Don't forget to reload the tmux environment (`$ tmux source-file ~/.tmux.conf`) 
 
 ### Tmux Plugins
 
-This plugin is part of the [tmux-plugins](https://github.com/tmux-plugins) organisation. Checkout plugins as [battery](https://github.com/tmux-plugins/tmux-battery), [logging](https://github.com/tmux-plugins/tmux-logging), [online status](https://github.com/tmux-plugins/tmux-online-status), and many more over at the [tmux-plugins](https://github.com/tmux-plugins) organisation page.
+This plugin is a fork of [tmux-cpu](https://github.com/tmux-plugins/tmux-cpu), part of the [tmux-plugins](https://github.com/tmux-plugins) organisation. Checkout plugins as [battery](https://github.com/tmux-plugins/tmux-battery), [logging](https://github.com/tmux-plugins/tmux-logging), [online status](https://github.com/tmux-plugins/tmux-online-status), and many more over at the [tmux-plugins](https://github.com/tmux-plugins) organisation page.
 
 ### Maintainers
 
