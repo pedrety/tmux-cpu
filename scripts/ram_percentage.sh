@@ -16,7 +16,7 @@ print_ram_percentage() {
   ram_percentage_format=$(get_tmux_option "@ram_percentage_format" "$ram_percentage_format")
 
   if command_exists "free"; then
-    cached_eval free | awk -v format="$ram_percentage_format" '$1 ~ /Mem/ {printf(format, 100*$3/$2)}'
+    cached_eval free | awk -v format="RAM:$ram_percentage_format" '$1 ~ /Mem/ {printf(format, 100*$3/$2)}'
   elif command_exists "vm_stat"; then
     # page size of 4096 bytes
     stats="$(cached_eval vm_stat)"
